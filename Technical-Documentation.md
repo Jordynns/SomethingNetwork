@@ -1,12 +1,12 @@
 <div align="center">
-  <h1>🧠 SomethingNetwork Technical Documentation</h1>
+  <h1>SomethingNetwork Technical Documentation</h1>
 </div>
 <div align="center">
   <img src="logo.png">
 </div>
 
 <div align="center">
-  <h2>Table of Contents</h2>
+  <h1>Table of Contents</h1>
 </div>
 
 1. [**Summary**](#summary)
@@ -52,60 +52,71 @@
 <hr/>
 
 <div align="center" id="summary">
-  <h2>Summary</h2>
+  <h1>Summary</h1>
 </div>
+
+⠀
+
 *(Content goes here)*
 
 <hr/>
 
 <div align="center" id="introduction">
-  <h2>Introduction</h2>
+  <h1>Introduction</h1>
 </div>
 
-### Overview of Virtualization
+⠀
+
+## Overview of Virtualization
 *(Content goes here)*
 
-### Objectives of SomethingNetwork
+## Objectives of SomethingNetwork
 *(Content goes here)*
 
 <hr/>
 
 <div align="center" id="system-requirements">
-  <h2>System Requirements</h2>
+  <h1>System Requirements</h1>
 </div>
 
-### Hardware Specifications
+⠀
+
+## Hardware Specifications
 *(Content goes here)*
 
-### Software Used (OS, Hypervisors, Tools)
+## Software Used (OS, Hypervisors, Tools)
 *(Content goes here)*
 
 <hr/>
 
 <div align="center" id="network-design">
-  <h2>Network Design</h2>
+  <h1>Network Design</h1>
 </div>
 
-### Logical Topology Diagram
+⠀
+
+## Logical Topology Diagram
 *(Content goes here)*
 
-### IP Addressing Scheme
+## IP Addressing Scheme
 *(Content goes here)*
 
-### VLAN Configuration
+## VLAN Configuration
 *(Content goes here)*
 
-### Routing
+## Routing
 *(Content goes here)*
 
-### Firewall
+## Firewall
 *(Content goes here)*
 
 <hr/>
 
 <div align="center" id="implementation">
-  <h2>Implementation</h2>
+  <h1>Implementation</h1>
 </div>
+
+⠀
 
 ### Hyper-V Setup
 *(Placeholder Description)*
@@ -132,8 +143,10 @@
 <hr/>
 
 <div align="center" id="testing--validation">
-  <h2>Testing & Validation</h2>
+  <h1>Testing & Validation</h1>
 </div>
+
+⠀
 
 ### Connectivity (Ping)
 *(Content goes here)*
@@ -154,8 +167,10 @@
 <hr/>
 
 <div align="center" id="maintenance--backup">
-  <h2>Maintenance & Backup</h2>
+  <h1>Maintenance & Backup</h1>
 </div>
+
+⠀
 
 ### Create VM Snapshots / Checkpoints
 *(Content goes here)*
@@ -169,8 +184,10 @@
 <hr/>
 
 <div align="center" id="troubleshooting">
-  <h2>Troubleshooting</h2>
+  <h1>Troubleshooting</h1>
 </div>
+
+⠀
 
 ### Common Issues
 *(Content goes here)*
@@ -178,8 +195,10 @@
 <hr/>
 
 <div align="center" id="conclusion">
-  <h2>Conclusion</h2>
+  <h1>Conclusion</h1>
 </div>
+
+⠀
 
 ### Achievements
 *(Content goes here)*
@@ -193,8 +212,10 @@
 <hr/>
 
 <div align="center" id="appendices">
-  <h2>Appendices</h2>
+  <h1>Appendices</h1>
 </div>
+
+⠀
 
 ### Full Configurations
 *(Content goes here)*
