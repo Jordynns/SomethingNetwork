@@ -6,7 +6,7 @@
 </div>
 
 <div align="center">
-  <h2>📒 Table of Contents</h2>
+  <h2>Table of Contents</h2>
 </div>
 
 1. [**Summary**](#summary)
