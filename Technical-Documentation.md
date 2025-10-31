@@ -1,1 +1,50 @@
-# Placeholder
+# SomethingNetwork Technical Documentation
+
+---
+
+## 📒 Table of Contents
+
+1. [Summary](Summary)
+2. Introduction
+   - Overview of Virtulization
+   - Objectives of SomethingNetwork
+4. System Requirements
+   - Hardware Specifications
+   - Software Used (OS, Hypervisor(s), Tools)
+5. Network Design
+   - Logical Topology Diagram
+   - IP Addressing Scheme
+   - VLAN Configuration
+   - Routing
+   - Firewall
+6. Implementation
+    - Hyper-V Setup
+    - Debian 13 Client Setup
+    - pfSense Setup
+        - Configuring DNS/DHCP
+    - Pi-Hole Setup
+7. Testing & Validation
+   - Connectivity (Ping)
+   - Services
+       - DNS
+           - Filtering (Pi-Hole)
+           - Custom Resolution
+       - DHCP
+   -  
+9. Maintence & Backup
+    - Create VM Snapshots / Checkpoints
+    - Updating Devices
+    - Network Backup / Recovery
+11. Troubleshooting
+    - Common Issues
+12. Conclusion
+    - Achievements
+    - Lessons Learned
+    - Future Improvements
+14. Appendices
+    - Full Configurations
+    - References
+
+---
+
+## 🗒️Summary
