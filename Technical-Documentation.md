@@ -3,20 +3,8 @@
 </div>
 
 <div align="center">
-  <img src="logo.png"
-     width="500"
-     onmouseover="this.style.opacity='0.6'; this.style.transform='scale(1.1)'"
-     onmouseout="this.style.opacity='1'; this.style.transform='scale(1)'"
-     style="transition:all 0.3s ease;">
+  <img src="logo.png">
 </div>
-
-<p 
-  style="color: black; transition: color 0.3s ease;"
-  onmouseover="this.style.color='red'"
-  onmouseout="this.style.color='black'">
-  Hover over this text!
-</p>
-
 
 <div align="center">
   <h2>📒 Table of Contents</h2>
@@ -132,7 +120,7 @@
 
 <hr/>
 
-<h2 id="system-requirements">System Requirements</h2>
+<h2 align="center" id="system-requirements">System Requirements</h2>
 
 <h3>Hardware Specifications</h3>
 <p><em>(Content goes here)</em></p>
