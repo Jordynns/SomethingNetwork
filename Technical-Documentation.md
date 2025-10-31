@@ -44,11 +44,11 @@
 
 ---
 
-## 🧠 Summary
+## Summary
 
 ---
 
-## 🏁 Introduction
+## Introduction
 
 ### Overview of Virtualization
 *(Content goes here)*
@@ -58,7 +58,7 @@
 
 ---
 
-## 🖥️ System Requirements
+## System Requirements
 
 ### Hardware Specifications
 *(Content goes here)*
@@ -68,7 +68,7 @@
 
 ---
 
-## 🕸️ Network Design
+## Network Design
 
 ### Logical Topology Diagram
 *(Content goes here)*
@@ -87,7 +87,7 @@
 
 ---
 
-## 🛠️ Implementation
+## Implementation
 
 ### Hyper-V Setup
 *(Content goes here)*
@@ -104,7 +104,7 @@
 
 ---
 
-## 🧪 Testing & Validation
+## Testing & Validation
 
 ### Connectivity (Ping)
 *(Content goes here)*
@@ -123,7 +123,7 @@
 
 ---
 
-## 🧰 Maintenance & Backup
+## Maintenance & Backup
 
 ### Create VM Snapshots / Checkpoints
 *(Content goes here)*
@@ -136,14 +136,14 @@
 
 ---
 
-## ❌ Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 *(Content goes here)*
 
 ---
 
-## 📋 Conclusion
+## Conclusion
 
 ### Achievements
 *(Content goes here)*
@@ -156,7 +156,7 @@
 
 ---
 
-## 📎 Appendices
+## Appendices
 
 ### Full Configurations
 *(Content goes here)*
