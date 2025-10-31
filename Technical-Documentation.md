@@ -1,226 +1,272 @@
 <div align="center">
-   
-# 🧠 SomethingNetwork Technical Documentation
-
-</div>
-
-
-<div align="center">
-   
-![test](logo.png)
-
+  <h1>🧠 SomethingNetwork Technical Documentation</h1>
 </div>
 
 <div align="center">
-   
-## 📒 Table of Contents
-
+  <img src="logo.png"
+     width="500"
+     onmouseover="this.style.opacity='0.6'; this.style.transform='scale(1.1)'"
+     onmouseout="this.style.opacity='1'; this.style.transform='scale(1)'"
+     style="transition:all 0.3s ease;">
 </div>
 
+<p 
+  style="color: black; transition: color 0.3s ease;"
+  onmouseover="this.style.color='red'"
+  onmouseout="this.style.color='black'">
+  Hover over this text!
+</p>
 
-
-1. [**Summary**](#summary)
-2. [**Introduction**](#introduction)
-   - ***Overview of Virtualization***  
-   - ***Objectives of SomethingNetwork***
-3. [**System Requirements**](#system-requirements)
-   - ***Hardware Specifications***  
-   - ***Software Used (OS, Hypervisors, Tools)***
-4. [**Network Design**](#network-design)
-   - ***Logical Topology Diagram***  
-   - ***IP Addressing Scheme***  
-   - ***VLAN Configuration***  
-   - ***Routing***  
-   - ***Firewall***
-5. [**Implementation**](#implementation)
-   - [***Hyper V Setup***](#hyper-v-setup)
-      - [***Virtual Switches***](#virtual-switches)
-   - ***Debian 13 Client Setup***  
-   - ***pfSense Setup***  
-     - ***Configuring DNS/DHCP***  
-   - ***Pi-Hole Setup***
-6. [**Testing & Validation**](#testing--validation)
-   - ***Connectivity (Ping)***  
-   - ***Services***  
-     - ***DNS***  
-       - ***Filtering (Pi-Hole)***  
-       - ***Custom Resolution***  
-     - ***DHCP***
-7. [**Maintenance & Backup**](#maintenance--backup)
-   - ***Create VM Snapshots / Checkpoints***  
-   - ***Updating Devices***  
-   - ***Network Backup / Recovery***
-8. [**Troubleshooting**](#troubleshooting)
-   - ***Common Issues***
-9. [**Conclusion**](#conclusion)
-   - ***Achievements***  
-   - ***Lessons Learned***  
-   - ***Future Improvements***
-10. [**Appendices**](#appendices)
-    - ***Full Configurations***  
-    - ***References***
-
----
 
 <div align="center">
-   
-## Summary
-
+  <h2>📒 Table of Contents</h2>
 </div>
 
----
+<ol>
+  <li><a href="#summary"><strong>Summary</strong></a></li>
+  <li>
+    <a href="#introduction"><strong>Introduction</strong></a>
+    <ul>
+      <li><em><strong>Overview of Virtualization</strong></em></li>
+      <li><em><strong>Objectives of SomethingNetwork</strong></em></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#system-requirements"><strong>System Requirements</strong></a>
+    <ul>
+      <li><em><strong>Hardware Specifications</strong></em></li>
+      <li><em><strong>Software Used (OS, Hypervisors, Tools)</strong></em></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#network-design"><strong>Network Design</strong></a>
+    <ul>
+      <li><em><strong>Logical Topology Diagram</strong></em></li>
+      <li><em><strong>IP Addressing Scheme</strong></em></li>
+      <li><em><strong>VLAN Configuration</strong></em></li>
+      <li><em><strong>Routing</strong></em></li>
+      <li><em><strong>Firewall</strong></em></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#implementation"><strong>Implementation</strong></a>
+    <ul>
+      <li>
+        <a href="#hyper-v-setup"><em><strong>Hyper-V Setup</strong></em></a>
+        <ul>
+          <li><a href="#virtual-switches"><em><strong>Virtual Switches</strong></em></a></li>
+        </ul>
+      </li>
+      <li><em><strong>Debian 13 Client Setup</strong></em></li>
+      <li><em><strong>pfSense Setup</strong></em></li>
+      <li><em><strong>Pi-Hole Setup</strong></em></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#testing--validation"><strong>Testing &amp; Validation</strong></a>
+    <ul>
+      <li><em><strong>Connectivity (Ping)</strong></em></li>
+      <li>
+        <em><strong>Services</strong></em>
+        <ul>
+          <li>
+            <em><strong>DNS</strong></em>
+            <ul>
+              <li><em><strong>Filtering (Pi-Hole)</strong></em></li>
+              <li><em><strong>Custom Resolution</strong></em></li>
+            </ul>
+          </li>
+          <li><em><strong>DHCP</strong></em></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#maintenance--backup"><strong>Maintenance &amp; Backup</strong></a>
+    <ul>
+      <li><em><strong>Create VM Snapshots / Checkpoints</strong></em></li>
+      <li><em><strong>Updating Devices</strong></em></li>
+      <li><em><strong>Network Backup / Recovery</strong></em></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#troubleshooting"><strong>Troubleshooting</strong></a>
+    <ul>
+      <li><em><strong>Common Issues</strong></em></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#conclusion"><strong>Conclusion</strong></a>
+    <ul>
+      <li><em><strong>Achievements</strong></em></li>
+      <li><em><strong>Lessons Learned</strong></em></li>
+      <li><em><strong>Future Improvements</strong></em></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#appendices"><strong>Appendices</strong></a>
+    <ul>
+      <li><em><strong>Full Configurations</strong></em></li>
+      <li><em><strong>References</strong></em></li>
+    </ul>
+  </li>
+</ol>
 
-<div align="center">
-   
-## Introduction
+<hr/>
 
+<div align="center" id="summary">
+  <h2>Summary</h2>
 </div>
 
-### Overview of Virtualization
-*(Content goes here)*
+<hr/>
 
-### Objectives of SomethingNetwork
-*(Content goes here)*
-
----
-
-## System Requirements
-
-### Hardware Specifications
-*(Content goes here)*
-
-### Software Used (OS, Hypervisors, Tools)
-*(Content goes here)*
-
----
-
-<div align="center">
-
-## Network Design
-
+<div align="center" id="introduction">
+  <h2>Introduction</h2>
 </div>
 
+<h3>Overview of Virtualization</h3>
+<p><em>(Content goes here)</em></p>
 
-### Logical Topology Diagram
-*(Content goes here)*
+<h3>Objectives of SomethingNetwork</h3>
+<p><em>(Content goes here)</em></p>
 
-### IP Addressing Scheme
-*(Content goes here)*
+<hr/>
 
-### VLAN Configuration
-*(Content goes here)*
+<h2 id="system-requirements">System Requirements</h2>
 
-### Routing
-*(Content goes here)*
+<h3>Hardware Specifications</h3>
+<p><em>(Content goes here)</em></p>
 
-### Firewall
-*(Content goes here)*
+<h3>Software Used (OS, Hypervisors, Tools)</h3>
+<p><em>(Content goes here)</em></p>
 
----
-<div align="center">
+<hr/>
 
-## Implementation
-
+<div align="center" id="network-design">
+  <h2>Network Design</h2>
 </div>
 
-### _Hyper-V Setup_
-*Placeholder Description*
+<h3>Logical Topology Diagram</h3>
+<p><em>(Content goes here)</em></p>
 
-#### **Virtual Switches**:
-   - **Wide Area Network (WAN)**
-     - **Name**: *WAN*
-     - **Connection Type**: *External (Select Host NIC)*
-   - Local Area Network (LAN)
-     - **Name**: *LAN*
-     - **Connection Type**: *Internal*
+<h3>IP Addressing Scheme</h3>
+<p><em>(Content goes here)</em></p>
 
-### Debian 13 Client Setup
-*(Content goes here)*
+<h3>VLAN Configuration</h3>
+<p><em>(Content goes here)</em></p>
 
-### pfSense Setup
-#### Configuring DNS/DHCP
-*(Content goes here)*
+<h3>Routing</h3>
+<p><em>(Content goes here)</em></p>
 
-### Pi-Hole Setup
-*(Content goes here)*
+<h3>Firewall</h3>
+<p><em>(Content goes here)</em></p>
 
----
+<hr/>
 
-<div align="center">
-
-## Testing & Validation
-
+<div align="center" id="implementation">
+  <h2>Implementation</h2>
 </div>
 
-### Connectivity (Ping)
-*(Content goes here)*
+<h3 id="hyper-v-setup"><em>Hyper-V Setup</em></h3>
+<p><em>Placeholder Description</em></p>
 
-### Services
+<h4 id="virtual-switches"><strong>Virtual Switches</strong></h4>
+<ul>
+  <li>
+    <strong>Wide Area Network (WAN)</strong>
+    <ul>
+      <li><strong>Name:</strong> <em>WAN</em></li>
+      <li><strong>Connection Type:</strong> <em>External (Select Host NIC)</em></li>
+    </ul>
+  </li>
+  <li>
+    <strong>Local Area Network (LAN)</strong>
+    <ul>
+      <li><strong>Name:</strong> <em>LAN</em></li>
+      <li><strong>Connection Type:</strong> <em>Internal</em></li>
+    </ul>
+  </li>
+</ul>
 
-#### DNS
-##### Filtering (Pi-Hole)
-*(Content goes here)*
+<h3>Debian 13 Client Setup</h3>
+<p><em>(Content goes here)</em></p>
 
-##### Custom Resolution
-*(Content goes here)*
+<h3>pfSense Setup</h3>
+<h4>Configuring DNS/DHCP</h4>
+<p><em>(Content goes here)</em></p>
 
-#### DHCP
-*(Content goes here)*
+<h3>Pi-Hole Setup</h3>
+<p><em>(Content goes here)</em></p>
 
----
-<div align="center">
+<hr/>
 
-## Maintenance & Backup
-
+<div align="center" id="testing--validation">
+  <h2>Testing &amp; Validation</h2>
 </div>
 
-### Create VM Snapshots / Checkpoints
-*(Content goes here)*
+<h3>Connectivity (Ping)</h3>
+<p><em>(Content goes here)</em></p>
 
-### Updating Devices
-*(Content goes here)*
+<h3>Services</h3>
 
-### Network Backup / Recovery
-*(Content goes here)*
+<h4>DNS</h4>
 
----
+<h5>Filtering (Pi-Hole)</h5>
+<p><em>(Content goes here)</em></p>
 
-<div align="center">
+<h5>Custom Resolution</h5>
+<p><em>(Content goes here)</em></p>
 
-## Troubleshooting
+<h4>DHCP</h4>
+<p><em>(Content goes here)</em></p>
 
+<hr/>
+
+<div align="center" id="maintenance--backup">
+  <h2>Maintenance &amp; Backup</h2>
 </div>
 
-### Common Issues
-*(Content goes here)*
+<h3>Create VM Snapshots / Checkpoints</h3>
+<p><em>(Content goes here)</em></p>
 
----
+<h3>Updating Devices</h3>
+<p><em>(Content goes here)</em></p>
 
-<div align="center">
+<h3>Network Backup / Recovery</h3>
+<p><em>(Content goes here)</em></p>
 
-## Conclusion
+<hr/>
 
+<div align="center" id="troubleshooting">
+  <h2>Troubleshooting</h2>
 </div>
 
-### Achievements
-*(Content goes here)*
+<h3>Common Issues</h3>
+<p><em>(Content goes here)</em></p>
 
-### Lessons Learned
-*(Content goes here)*
+<hr/>
 
-### Future Improvements
-*(Content goes here)*
-
----
-
-<div align="center">
-
-## Appendices
-
+<div align="center" id="conclusion">
+  <h2>Conclusion</h2>
 </div>
 
-### Full Configurations
-*(Content goes here)*
+<h3>Achievements</h3>
+<p><em>(Content goes here)</em></p>
 
-### References
-*(Content goes here)*
+<h3>Lessons Learned</h3>
+<p><em>(Content goes here)</em></p>
+
+<h3>Future Improvements</h3>
+<p><em>(Content goes here)</em></p>
+
+<hr/>
+
+<div align="center" id="appendices">
+  <h2>Appendices</h2>
+</div>
+
+<h3>Full Configurations</h3>
+<p><em>(Content goes here)</em></p>
+
+<h3>References</h3>
+<p><em>(Content goes here)</em></p>
