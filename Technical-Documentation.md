@@ -15,7 +15,10 @@
    - ***Objectives of SomethingNetwork***
 3. [**System Requirements**](#system-requirements)
    - ***Hardware Specifications***
-   - ***Software Used (OS, Hypervisors, Tools)***
+   - ***Software Used***
+        - [***Operating Systems***](#operating-systems)
+        - [***Hypervisors***](#hypervisors)
+        - [***Tools***](#tools)
 4. [**Network Design**](#network-design)
    - ***Logical Topology Diagram***
    - ***IP Addressing Scheme***
