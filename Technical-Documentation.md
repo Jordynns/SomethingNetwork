@@ -187,53 +187,11 @@
 *(Content goes here)*
 
 ## Portainer Setup
-1) Firstly update the machine:
+Run the docker.sh install script while SSH into Ubuntu server:
 ```
-sudo apt update && sudo apt upgrade -y
-```
-
-2) Install these following packages:
-```
-sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+curl -fsSL https://raw.githubusercontent.com/Jordynns/SomethingNetwork/refs/heads/main/scripts/docker.sh | bash
 ```
 
-3) Set GPG Keyrings for Ubuntu and update sources list:
-```
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-```
-
-4) Update the packages then install Docker package:
-``` 
-sudo apt update
-sudo apt install docker-ce docker-ce-cli containerd.io -y
-```
-
-5) Enable and Restart Docker services:
-```
-sudo systemctl enable docker
-sudo systemctl start docker
-```
-
-6) Run the following command to check if Docker installed correctly:
-```
-docker --version
-```
-
-7) Once Docker is installed properly, create a volume for Portainer data: 
-```
-docker volume create portainer_data
-```
-
-8) Then run the Docker container: 
-```
-docker run -d -p 8000:8000 -p 9443:9443 \
-    --name=portainer \
-    --restart=always \
-    -v /var/run/docker.sock:/var/run/docker.sock \
-    -v portainer_data:/data \
-    portainer/portainer-ce:latest
-```
 
 ## Pi-Hole Setup
 *(Content goes here)*
