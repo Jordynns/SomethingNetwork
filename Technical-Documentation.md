@@ -183,7 +183,7 @@
 
 #### Ubuntu Server Video Guide
 
-### Configuring DNS/DHCP
+## Configuring DNS/DHCP
 *(Content goes here)*
 
 ## Portainer Setup
