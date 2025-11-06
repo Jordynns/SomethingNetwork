@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  pihole:
+    container_name: pihole
+    image: pihole/pihole:latest
+    hostname: pihole
+    environment:
+      TZ: "Etc/UTC"
+      WEBPASSWORD: "changeme"  # Set your password
+      DNS1: 1.1.1.1
+      DNS2: 1.0.0.1
+    volumes:
+      - /docker/pihole/etc-pihole:/etc/pihole
+      - /docker/pihole/etc-dnsmasq.d:/etc/dnsmasq.d
+    restart: unless-stopped
+    networks:
+      pihole_macvlan:
+        ipv4_address: 192.168.1.250  # <-- Assign an unused IP on your LAN
+    cap_add:
+      - NET_ADMIN
+
+networks:
+  pihole_macvlan:
+    external: true
