@@ -213,7 +213,7 @@ services:
     restart: unless-stopped
     environment:
       TZ: "Etc/UTC"
-      WEBPASSWORD: "changeme"
+      WEBPASSWORD: "changeme" # Change this to your password
     volumes:
       - /docker/pihole/etc-pihole:/etc/pihole
       - /docker/pihole/etc-dnsmasq.d:/etc/dnsmasq.d
