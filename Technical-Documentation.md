@@ -100,9 +100,9 @@
 - RAM:
 
 #### Our Specifications
-- CPU:
-- GPU:
-- RAM:
+- CPU: [**Intel(R) Core(TM) i9-14900**](https://www.intel.com/content/www/us/en/products/sku/236793/intel-core-i9-processor-14900-36m-cache-up-to-5-80-ghz/specifications.html)
+- GPU: Intel(R) UHD Graphics 770
+- RAM: 128GB DDR4 @ 3600MHz
 
 ## Software Used (OS, Hypervisors, Tools)
 *(Placeholder Description)*
