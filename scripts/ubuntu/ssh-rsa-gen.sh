@@ -1,19 +1,31 @@
 #!/usr/bin/env bash
-set -e  # exit if any command fails
+set -e  # Exit if any command fails
 
 echo "=== RSA SSH Key Generator ==="
 
-# Prompt for custom key file path (default: ~/.ssh/id_rsa)
+# Prompt for key file path (default: ~/.ssh/id_rsa)
 read -rp "Enter key path (default: ~/.ssh/id_rsa): " KEY_PATH
 KEY_PATH=${KEY_PATH:-~/.ssh/id_rsa}
 
-# Expand ~ properly
+# Expand tilde (~) safely
 KEY_PATH="${KEY_PATH/#\~/$HOME}"
 
 # Make sure directory exists
 mkdir -p "$(dirname "$KEY_PATH")"
 
-# Prompt for a custom comment
+# If file already exists, ask before overwriting
+if [[ -f "$KEY_PATH" || -f "${KEY_PATH}.pub" ]]; then
+    echo "⚠️  Key file already exists: $KEY_PATH"
+    read -rp "Do you want to overwrite it? (y/N): " CONFIRM
+    CONFIRM=${CONFIRM,,}  # convert to lowercase
+    if [[ "$CONFIRM" != "y" && "$CONFIRM" != "yes" ]]; then
+        echo "❌ Aborted. Existing key not overwritten."
+        exit 1
+    fi
+    echo "Overwriting existing key..."
+fi
+
+# Prompt for custom comment
 read -rp "Enter a comment for your key (default: Ubuntu SSH RSA Key): " KEY_COMMENT
 KEY_COMMENT=${KEY_COMMENT:-Ubuntu SSH RSA Key}
 
