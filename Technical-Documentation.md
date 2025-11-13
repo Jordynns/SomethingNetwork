@@ -22,7 +22,6 @@
 4. [**Network Design**](#network-design)
    - ***Logical Topology Diagram***
    - ***IP Addressing Scheme***
-   - ***VLAN Configuration***
    - ***Routing***
    - ***Firewall***
 5. [**Implementation**](#implementation)
@@ -138,9 +137,6 @@
 *(Content goes here)*
 
 ## IP Addressing Scheme
-*(Content goes here)*
-
-## VLAN Configuration
 *(Content goes here)*
 
 ## Routing
