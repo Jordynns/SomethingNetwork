@@ -19,3 +19,4 @@ echo "Network Name: pihole_ipvlan"
 
 echo "======================="
 
+rm -- "$0"
