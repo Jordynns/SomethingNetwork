@@ -177,6 +177,12 @@
 
 ## Ubuntu Server Setup
 
+#### Generating RSA Keys (Passwordless Login)
+Run ssh-rsa-gen.sh in your Management machine e.g., Debian 13 GUI
+```
+curl -fsSL https://raw.githubusercontent.com/Jordynns/SomethingNetwork/refs/heads/main/scripts/ubuntu/ssh-rsa-gen.sh | bash
+```
+
 #### Ubuntu Server Video Guide
 
 ## Configuring DNS/DHCP
