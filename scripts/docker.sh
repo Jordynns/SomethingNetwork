@@ -24,3 +24,5 @@ echo "✅ Installed Successfully"
 echo "Container: Portainer"
 echo "IP: $(ip -4 addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'):9443"
 echo "=================================="
+
+rm -- "$0"
