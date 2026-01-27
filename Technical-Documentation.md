@@ -233,6 +233,16 @@ services:
 
 Change the password, this will create pihole on ip 192.168.1.2, To access the WebGUI head to https://192.168.1.2/admin
 
+Additionally, you can add some optional filter list(s) to increase blocking potential and security by adding the following:
+```
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/multi.txt
+```
+
+To update the lists after adding, head to Tools > Update Gravity and update the lists or run the command:
+```
+pihole -g
+```
+
 <hr/>
 
 <div align="center" id="testing--validation">
