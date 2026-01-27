@@ -236,6 +236,37 @@ To update or change the password use the following command:
 pihole setpassword
 ```
 
+## Jellyfin Setup
+
+On the Ubuntu Server, create a main "jellyfin" directory, within that Directory create three sub-directories "cache", "config", and "media" optional but best practice to host media is within the media directory is to include extra directories such as "Movies", "TV Shows", and/or "YouTube" which can help keep it organised.
+
+Head into Portainer and create a new stack named "jellyfin" and paste the YAML:
+```
+services:
+  jellyfin:
+    image: jellyfin/jellyfin
+    container_name: jellyfin
+    user: 1000:1000
+    ports:
+      - 8096:8096/tcp
+      - 7359:7359/udp
+    volumes:
+      - type: bind
+        source: /home/jellyfin/cache
+        target: /cache
+      - type: bind
+        source: /home/jellyfin/config
+        target: /config
+      - type: bind
+        source: /home/jellyfin/media
+        target: /media
+        read_only: true
+    restart: 'unless-stopped'
+    # Optional - alternative address used for autodiscovery
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+```
+
 <hr/>
 
 <div align="center" id="testing--validation">
