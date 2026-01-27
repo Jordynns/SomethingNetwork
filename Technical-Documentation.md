@@ -38,7 +38,7 @@
    - ***Services***
      - ***DNS***
        - ***Filtering (Pi-Hole)***
-       - ***Custom Resolution***
+       - ***Custom Domain Resolution***
      - ***DHCP***
 7. [**Maintenance & Backup**](#maintenance--backup)
    - ***Create VM Snapshots / Checkpoints***
@@ -264,7 +264,7 @@ To update the lists after adding, head to Tools > Update Gravity and update the 
 pihole -g
 ```
 
-### Custom Resolution
+### Custom Domain Resolution
 *(Content goes here)*
 
 ### DHCP
