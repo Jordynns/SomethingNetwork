@@ -222,7 +222,6 @@ services:
     restart: unless-stopped
     environment:
       TZ: "Etc/UTC"
-      WEBPASSWORD: "changeme" # Change this to your password
     volumes:
       - /docker/pihole/etc-pihole:/etc/pihole
       - /docker/pihole/etc-dnsmasq.d:/etc/dnsmasq.d
@@ -230,8 +229,13 @@ services:
       pihole_ipvlan:
         ipv4_address: 192.168.1.2
 ```
+This will create pihole on ip 192.168.1.2, To access the WebGUI head to https://192.168.1.2/admin
 
-Change the password, this will create pihole on ip 192.168.1.2, To access the WebGUI head to https://192.168.1.2/admin
+To update or change the password use the following command:
+```
+pihole setpassword
+```
+
 
 Additionally, you can add some optional filter list(s) to increase blocking potential and security by adding the following:
 ```
