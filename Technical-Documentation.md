@@ -236,17 +236,6 @@ To update or change the password use the following command:
 pihole setpassword
 ```
 
-
-Additionally, you can add some optional filter list(s) to increase blocking potential and security by adding the following:
-```
-https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/multi.txt
-```
-
-To update the lists after adding, head to Tools > Update Gravity and update the lists or run the command:
-```
-pihole -g
-```
-
 <hr/>
 
 <div align="center" id="testing--validation">
@@ -264,7 +253,16 @@ pihole -g
 ### DNS
 
 ### Filtering (Pi-Hole)
-*(Content goes here)*
+
+Additionally, you can add some optional filter list(s) to increase blocking potential and security by adding the following:
+```
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/multi.txt
+```
+
+To update the lists after adding, head to Tools > Update Gravity and update the lists or run the command:
+```
+pihole -g
+```
 
 ### Custom Resolution
 *(Content goes here)*
