@@ -17,10 +17,10 @@ This project demonstrates practical skills in **network design, virtualization, 
 
 ## User Documentation
 
-[Read](https://github.com/Jordynns/SomethingNetwork/blob/main/User-Documentation.md)
+[Read](https://github.com/Jordynns/Wojtek-Network/blob/main/User-Documentation.md)
 
 ---
 
 ## Technical Documentation
 
-[Read](https://github.com/Jordynns/SomethingNetwork/blob/main/Technical-Documentation.md)
+[Read](https://github.com/Jordynns/Wojtek-Network/blob/main/Technical-Documentation.md)
