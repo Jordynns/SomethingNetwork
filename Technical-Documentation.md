@@ -176,7 +176,7 @@
 Hyper-V Settings:
 - Generation: Generation 2
 - Memory: 2048MB (Static)
-- NIC: WAN (Public)
+- NIC: WAN (Public) + LAN (Internal)
 - Storage: 8gb (Static)
 - ISO: pfSense-CE-2.7.2-RELEASE-amd64.iso
 - Processor: 1
